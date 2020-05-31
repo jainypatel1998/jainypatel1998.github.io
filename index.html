@@ -3,6 +3,8 @@
 <head>
 	<title>My Portfolio</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" type="text/css" href="css/superslides.css">
 	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 
@@ -14,8 +16,16 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
 </head>
 <body>
+
+
+	<div class="loader">
+		<div class="inner"></div>
+	</div>
 
 	<div id="slides">
 
@@ -42,6 +52,35 @@
 	</div>
 
 
+	<nav id="navigation" class="navbar navbar-expand-lg">
+	  <a class="navbar-brand" href="#"></a>
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarNav">
+	    <ul class="navbar-nav">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="#about">About <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#skills">Skills</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#stats">Stats</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Pricing</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Disabled</a>
+	      </li>
+	    </ul>
+	  </div>
+	</nav>
+
+
 	<div id="about" class="section">
 		<div class="container">
 			<div class="row">
@@ -57,6 +96,7 @@
 			</div>
 		</div>
 	</div>
+
 
 	<div id="skills" class="skillsSection section">
 		<div class="container">
@@ -190,16 +230,38 @@
 				<div class="filter">
 					<ul id="filters">
 						<li><a href="#" data-filer="*" class="current">ALL</a></li>
-
 						<li><a href="#" data-filer=".apps">Apps</a></li>
-
 						<li><a href="#" data-filer=".websites">Websites</a></li>
+						<li><a href="#" data-filer=".me">Me</a></li>
 					</ul>
 				</div>
 
 				<div class="itemsContainer">
 					<ul class="items">
-						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+
+
+						<li onclick="" class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+							<div class="item">
+
+								<img src="img/portfolio/thumbnails/worldmap.png">
+
+								<div class="icons">
+									<a href="img/portfolio/world.png" title="view image" class="openButton" data-fancybox data-caption="This is a cute">
+										<i class="fa fa-search"></i>
+									</a>
+
+									<a href="" target="_blank" class="projectLink">
+										<i class="fa fa-link"></i>
+									</a>
+								</div>
+
+								<div class="imageOverlay"></div>
+
+							</div>
+						</li> 
+
+
+						<li onclick="" class="websites col-xs-6 col-sm-4 col-md-3 col-lg-3">
 							<div class="item">
 
 								<img src="img/portfolio/thumbnails/worldmap.png">
@@ -220,91 +282,9 @@
 						</li>
 
 
-						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-							<div class="item">
+						
 
-								<img src="img/portfolio/thumbnails/worldmap.png">
-
-								<div class="icons">
-									<a href="img/portfolio/world.png" title="view image" class="openButton" data-fancybox data-caption="This is a cute">
-										<i class="fa fa-search"></i>
-									</a>
-
-									<a href="" target="_blank" class="projectLink">
-										<i class="fa fa-link"></i>
-									</a>
-								</div>
-
-								<div class="imageOverlay"></div>
-
-							</div>
-						</li>
-
-
-						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-							<div class="item">
-
-								<img src="img/portfolio/thumbnails/worldmap.png">
-
-								<div class="icons">
-									<a href="img/portfolio/world.png" title="view image" class="openButton" data-fancybox data-caption="This is a cute">
-										<i class="fa fa-search"></i>
-									</a>
-
-									<a href="" target="_blank" class="projectLink">
-										<i class="fa fa-link"></i>
-									</a>
-								</div>
-
-								<div class="imageOverlay"></div>
-
-							</div>
-						</li>
-
-
-						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-							<div class="item">
-
-								<img src="img/portfolio/thumbnails/worldmap.png">
-
-								<div class="icons">
-									<a href="img/portfolio/world.png" title="view image" class="openButton" data-fancybox data-caption="This is a cute">
-										<i class="fa fa-search"></i>
-									</a>
-
-									<a href="" target="_blank" class="projectLink">
-										<i class="fa fa-link"></i>
-									</a>
-								</div>
-
-								<div class="imageOverlay"></div>
-
-							</div>
-						</li>
-
-
-						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
-							<div class="item">
-
-								<img src="img/portfolio/thumbnails/worldmap.png">
-
-								<div class="icons">
-									<a href="img/portfolio/world.png" title="view image" class="openButton" data-fancybox data-caption="This is a cute">
-										<i class="fa fa-search"></i>
-									</a>
-
-									<a href="" target="_blank" class="projectLink">
-										<i class="fa fa-link"></i>
-									</a>
-								</div>
-
-								<div class="imageOverlay"></div>
-
-							</div>
-						</li>
-
-
-						<li class="apps col-xs-6 col-sm-4 col-md-3 col-lg-3">
+						<li onclick="" class="me col-xs-6 col-sm-4 col-md-3 col-lg-3">
 							<div class="item">
 
 								<img src="img/portfolio/thumbnails/worldmap.png">
@@ -327,8 +307,15 @@
 				</div>
 			</div>
 		</div>
-		
 	</div>
+
+	<div class="copyrightSection">
+		<div class="col-md-12 text-center">
+			<p>&copy; Copyright Jainy Patel 2020</p>
+			<p>Made with &hearts;</p>
+		</div>
+	</div>
+
 
 
 	
