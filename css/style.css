@@ -372,6 +372,24 @@ body{
 	background: url(../img/5.gif) center center no-repeat;
 }
 
+.skillsSection .contactSection .icons {
+	position: absolute;
+	width: 90px;
+	height: 40px;
+	left: 50%;
+	top: 50%;
+	margin: -20px auto 0 -47px;
+	text-align: center;
+	z-index: 90;
+}
+
+.skillsSection .contactSection .icons i{
+	color: #fff;
+	font-size: 20px;
+	margin-top: 9px;
+	z-index: 99;
+}
+
 
 
 
